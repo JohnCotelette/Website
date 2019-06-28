@@ -1,0 +1,38 @@
+/* ==> SOMBRETHEME SETTINGS <== */
+
+/* All */
+
+#totalPageContent, .sectionTitles, .smallContents, .containers
+{
+	transition: background-color 1s linear, color 1s ease, transform 0.2s ease;
+}
+
+.buttons
+{
+	transition: 0.3s ease;
+}
+
+#totalPageContent
+{
+	background-color: rgb(40, 40, 40);
+}
+
+.sectionTitles
+{
+	background-color: rgb(80, 80, 80);
+}
+
+.smallContents, .containers
+{
+	background-color: rgb(100, 100, 100);
+}
+
+.sectionTitles, .smallContents, .containers
+{
+	color: white;
+}
+
+.buttons
+{
+	background-color: rgb(40, 40, 40);
+}

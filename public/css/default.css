@@ -1,0 +1,13 @@
+/* ==> DEFAULTTHEME SETTINGS <== */
+
+/* All */
+
+#totalPageContent, .sectionTitles, .smallContents, .containers
+{
+	transition: background-color 1s linear, color 1s ease, transform 0.2s ease;
+}
+
+.buttons
+{
+	transition: 0.3s ease;
+}

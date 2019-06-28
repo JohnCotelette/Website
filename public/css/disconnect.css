@@ -1,0 +1,103 @@
+/* ==> DISCONNECTPAGE SETTINGS <== */
+
+/* Menu Nav */
+
+.adminLinksContainers
+{
+	display: none !important;
+}
+
+/* ------------ */
+/* Content */
+
+#pageContent
+{
+	display: flex;
+	flex: 1;
+	min-height: calc(100vh - 90px);
+	margin-top: 90px;
+	animation: appear 0.9s ease both;
+	-webkit-animation: appear 0.9s ease both;
+}
+
+#messageContainer
+{
+	margin: auto;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.5em;
+	animation: apparition 0.8s linear;
+}
+
+#homeReturn
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#homeReturn:hover
+{
+	color: grey;
+}
+
+#oups
+{
+	background-color: rgb(245, 245, 245);
+	padding: 25px;
+}
+
+#count
+{
+	color: red;
+	font-weight: bolder;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ===> RESPONSIVE SETTINGS <=== */
+
+@media screen and (max-width: 599px)
+{
+
+/* Content */
+/* ----------------------------------------*/
+
+	#messageContainer
+	{
+		width: 80%;
+		font-size: 99%;
+	}
+
+	#oups
+	{
+		padding: 10px;
+	}
+
+	#contentNav
+	{
+		height: 140px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px)
+{
+
+/* Content */
+/* ----------------------------------------*/
+
+	#messageContainer
+	{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px)
+{
+
+/* Content */
+/* ----------------------------------------*/
+
+	#messageContainer
+	{
+		width: 70%;
+	}
+}

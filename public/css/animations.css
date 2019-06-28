@@ -1,0 +1,739 @@
+/* ==> PERSONNALS ANIMATIONS <== */
+
+/* To draw a border */
+
+@keyframes drawBefore
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 100%;
+        height: 0;
+        border-top-color: white;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+@-webkit-keyframes drawBefore
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 100%;
+        height: 0;
+        border-top-color: white;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+@keyframes drawAfter
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: white;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: white;
+        border-left-color: white;
+    }
+}
+
+@-webkit-keyframes drawAfter
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: white;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: white;
+        border-left-color: white;
+    }
+}
+
+@keyframes drawBeforeBlack
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 100%;
+        height: 0;
+        border-top-color: black;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: black;
+        border-right-color: black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+@-webkit-keyframes drawBeforeBlack
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 100%;
+        height: 0;
+        border-top-color: black;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: black;
+        border-right-color: black;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+@keyframes drawAfterBlack
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: black;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: black;
+        border-left-color: black;
+    }
+}
+
+@-webkit-keyframes drawAfterBlack
+{
+    0%
+    {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: black;
+    }
+
+    100%
+    {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: black;
+        border-left-color: black;
+    }
+}
+
+/* ------------ */
+/* Cool animation for one title */
+
+@keyframes letterSpacingAnimate
+{
+    0%
+    {
+        opacity: 0;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    20%
+    {
+        opacity: 0.5;
+        letter-spacing: 20px;
+        top: 55px;
+    }
+
+    50%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    80%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    100%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes letterSpacingAnimate
+{
+    0%
+    {
+        opacity: 0;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    20%
+    {
+        opacity: 0.5;
+        letter-spacing: 20px;
+        top: 55px;
+    }
+
+    50%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    80%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 55px;
+    }
+
+    100%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+        top: 0;
+    }
+}
+
+@keyframes bigTitleMobile
+{
+    0%
+    {
+        opacity: 0;
+        letter-spacing: 5px;
+    }
+
+    20%
+    {
+        opacity: 0.5;
+        letter-spacing: 20px;
+    }
+
+    50%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+
+    80%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+
+    100%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+}
+
+@-webkit-keyframes letterSpacingAnimate
+{
+    0%
+    {
+        opacity: 0;
+        letter-spacing: 5px;
+    }
+
+    20%
+    {
+        opacity: 0.5;
+        letter-spacing: 20px;
+    }
+
+    50%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+
+    80%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+
+    100%
+    {
+        opacity: 1;
+        letter-spacing: 5px;
+    }
+}
+
+/* ------------ */
+/* A classic fadeInBottom for an header */
+
+@keyframes headerFadeInBottom
+{
+    0%
+    {
+        top: -90px;
+    }
+
+    70%
+    {
+        display: block;
+        top: -90px;
+    }
+
+    100%
+    {
+        display: block;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes headerFadeInBottom
+{
+    0%
+    {
+        top: -90px
+    }
+
+    70%
+    {
+        display: block;
+        top: -90px;
+    }
+
+    100%
+    {
+        display: block;
+        top: 0;
+    }
+}
+
+/* ------------ */
+/* To animate appear or disappear */
+
+@keyframes disapear
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes disapear
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity : 1;
+    }
+}
+
+@-webkit-keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity : 1;
+    }
+}
+
+/* ------------ */
+/* To animate the width of a small <hr /> */
+
+@keyframes hrEnlarge
+{
+    0%
+    {
+        width: 0;
+    }
+
+    100%
+    {
+        width: 150px;
+    }
+}
+
+@-webkit-keyframes hrEnlarge
+{
+    0%
+    {
+        width: 0;
+    }
+
+    100%
+    {
+        width: 150px;
+    }
+}
+
+/* ------------ */
+/* To animate fadeIn */
+
+@keyframes fadeInTop
+{
+    0%
+    {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInTop
+{
+    0%
+    {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft
+{
+    0%
+    {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInLeft
+{
+    0%
+    {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight
+{
+    0%
+    {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInRight
+{
+    0%
+    {
+        transform: translate3d(-100%, 0, 0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* ------------ */
+/* To animate the max-width of the skill bar <hr /> */
+
+@keyframes biggerSkillBar
+{
+    0%
+    {
+        max-width: 0%;
+    }
+
+    100%
+    {
+        max-width: 100%;
+    }
+}
+
+@-webkit-keyframes biggerSkillBar
+{
+    0%
+    {
+        max-width: 0%;
+    }
+
+    100%
+    {
+        max-width: 100%;
+    }
+}
+
+/* ------------ */
+/* To animate a right border to create a blind cursor on a text */
+
+@keyframes blinkCursor
+{
+    0%
+    {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    100%
+    {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blinkCursor
+{
+    0%
+    {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    100%
+    {
+        border-right-color: transparent;
+    }
+}
+
+/* ------------ */
+/* To animate a shake */
+
+@keyframes shake 
+{
+    10%, 90%
+    {
+        transform: translate3d(-1px, 0, 0);
+    }
+      
+    20%, 80%
+    {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70%
+    {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60%
+    {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-webkit-keyframes shake 
+{
+    10%, 90%
+    {
+        transform: translate3d(-1px, 0, 0);
+    }
+      
+    20%, 80%
+    {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70%
+    {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60%
+    {
+        transform: translate3d(4px, 0, 0);
+    }
+}

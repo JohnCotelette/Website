@@ -1,14 +1,11 @@
 <?php 
-/**
- * A class to manage the view (motor)
- */
-
 namespace App\Src\Framework;
 
 class View
 {
 	private $file;
 	private $title;
+	private $header;
 	private $css = [];
 	private $scripts = [];
 
@@ -16,28 +13,14 @@ class View
 	{
 		$this->addTitle($title);
 
-		if (is_array($css))
+		forEach($css as $style)
 		{
-			forEach($css as $style)
-			{
-				$this->addCSS($style);
-			}
-		}
-		else 
-		{
-			$this->addCSS($css);
+			$this->css[] = $style;
 		}
 
-		if (is_array($scripts))
+		forEach($scripts as $script)
 		{
-			forEach($scripts as $script)
-			{
-				$this->addScripts($script);
-			}
-		}
-		else
-		{
-			$this->addScripts($scripts);
+			$this->scripts[] = $script;
 		}
 	}
 
@@ -46,22 +29,15 @@ class View
 		$this->title = $title;
 	}
 
-	public function addCSS($file)
+	public function render($contentTemplate, $headerTemplate, $data = [])
 	{
-		$this->css[] = '<link rel="stylesheet" href="css/' . $file . '.css" />';
-	}
-
-	public function addScripts($file)
-	{
-		$this->scripts[] = '<script src="js/' . $file . '.js"></script>';	
-	}
-
-	public function render($template, $data = [])
-	{
-		$this->file = "../template/" . $template . ".php";
+		$this->file = "../template/" . $contentTemplate . ".php";
+		$this->header = "../template/" . $headerTemplate . ".php";
+		$header = $this->renderFile($this->header, $data);
 		$content = $this->renderFile($this->file, $data);
 		$view = $this->renderFile("../template/base.php", [
 			"title" => $this->title,
+			"header" => $header,
 			"css" => $this->css,
 			"scripts" => $this->scripts,
 			"content" => $content
@@ -80,7 +56,7 @@ class View
 		}
 		else
 		{
-			header("Location: index.php?route=notFound");
+			throw new Exception;
 		}
 	}
 }

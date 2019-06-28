@@ -1,0 +1,127 @@
+/* ==> SIGNIN SETTINGS <== */
+
+/* Content */
+/* ------------ */
+
+#pageContent
+{
+	display: flex;
+	flex: 1;
+	min-height: calc(100vh - 90px);
+	margin-top: 90px;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+form p
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+form, #captcha
+{
+	width: 20%;
+	animation: appear 1s ease;
+	-webkit-animation: appear 1s ease;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#captcha
+{
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+}
+
+#captcha p
+{
+	margin-top: 0;
+}
+
+#captchaResult
+{
+	width: 18px;
+}
+
+form input
+{
+	padding: 10px;
+}
+
+.labels 
+{
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+#password
+{
+	margin-bottom: 20px;
+}
+
+.buttons
+{
+	padding: 0.8em;
+	padding-right: 1.4em;
+	padding-left: 1.4em;
+	border-radius: 5px;
+	background-color: #435962;
+	color: white;
+	text-transform: uppercase;
+	animation: appear 0.5s ease-out;
+	-webkit-animation: appear 0.5s ease-out;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+#error
+{
+	color: red;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	animation: shake 0.6s linear;
+	-webkit-animation: shake 0.6s linear;
+	display: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 550px)
+{
+	form, #captcha
+	{
+		width: 80%;
+	}
+}
+
+/* ---------------------------------------- */
+/* ==> RESPONSIVE SETTINGS <== */
+
+@media screen and (max-height: 240px)
+{
+
+/* Content */
+
+	form, #captcha
+	{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px)
+{
+
+/* Content */
+
+	form, #captcha
+	{
+		width: 40%;
+	}
+}

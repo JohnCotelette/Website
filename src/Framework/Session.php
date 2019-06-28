@@ -28,7 +28,7 @@ class Session
 
 	static public function checkSession()
 	{
-		if (isset($_SESSION["nameAdminBlog"]))
+		if (!empty($_SESSION))
 		{
 			return true;
 		}

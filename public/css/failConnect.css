@@ -1,0 +1,13 @@
+/* ==> SPECIAL SETTINGS FOR DISPLAY THE ERROR MESSAGE IF FAILCONNECT <== */
+
+/* Content */
+
+#error
+{
+	display: block;
+}
+
+#totalPageContent
+{
+	overflow: hidden;
+}

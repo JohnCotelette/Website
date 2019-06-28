@@ -1,3 +1,7 @@
+<?php
+use App\Src\Utility\AddCssScripts;
+?>
+
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -5,19 +9,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 		<link rel="stylesheet" href="css/main.css" />
-<?php
-if (is_array($css))
-	{
-		forEach($css as $style)
-		{
-			echo $style;
-		}
-	}
-else
-	{
-		echo $css;
-	}
-?>
+<?php forEach($css as $style) : echo AddCssScripts::addCss($style); endforeach; ?>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="icon" type="image/png" href="" />
 		<title><?=$title?></title>
@@ -39,28 +31,19 @@ else
 	<body>
 		<div id="totalPageContent">
 			<header>
+				<div id="headerTitle">
+					<a href="index.php">Samuel Darras</a>
+				</div>
+				<a id="hamburger" href="#"><i class="fas fa-bars"></i></a>
+				<nav id="menu">
+					<?=$header;?>
+					<a href="#" id="exitMobileMenu" class="invisible"><i class="far fa-times-circle"></i></a>
+				</nav>
 			</header>
-
 			<main id="pageContent">
 				<?=$content;?>
 			</main>
-
-			<footer id="footer">
-			</footer>
 		</div>
-
-<?php
-if (is_array($scripts))
-{
-	forEach($scripts as $script)
-	{
-		echo $script;
-	}
-}
-else
-{
-	echo $scripts;
-}
-?>
+<?php forEach($scripts as $script) : echo AddCssScripts::addScript($script); endforeach; ?>
 	</body>
 </html>
