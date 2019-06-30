@@ -72,6 +72,7 @@ class ConnectionController extends Controller
 					Session::customizeSession("adminName", $name);
 					Session::customizeSession("adminRights", $rights);
 					header("Location: index.php?admin");
+					exit;
 				}
 				else
 				{

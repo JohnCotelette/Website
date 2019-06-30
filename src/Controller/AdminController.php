@@ -250,10 +250,6 @@ class AdminController extends Controller
 			{
 				throw new Exception("Le type du projet n'est pas compatible avec les options d'origine.");
 			}
-			if (!filter_var($projectLink, FILTER_VALIDATE_URL))
-			{
-				throw new Exception("L'URL du projet est invalide.");
-			}
 			if (!empty($projectGithubLink))
 			{
 				if (!filter_var($projectGithubLink, FILTER_VALIDATE_URL))

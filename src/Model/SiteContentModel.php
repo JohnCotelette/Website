@@ -37,7 +37,7 @@ class SiteContentModel extends Model
 	public function editContent($bigTitleHeader, $smallTitleHeader, $cvDesc, $cvDescMore, $email, $phoneNumber)
 	{
 		$sql = 
-			"UPDATE siteContent
+			"UPDATE sitecontent
 			SET bigTitleHeader = '$bigTitleHeader',
 			 	smallTitleHeader = '$smallTitleHeader',
 			 	cvDesc = '$cvDesc',

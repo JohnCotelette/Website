@@ -11,3 +11,23 @@
 {
 	overflow: hidden;
 }
+
+/* ---------------------------------------- */
+/* ==> RESPONSIVE SETTINGS <== */
+
+@media screen and (max-height: 250px)
+{
+
+/* Content */
+
+	form, #captcha
+	{
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+
+	#error
+	{
+		margin-top: 60px;
+	}
+}

@@ -84,6 +84,7 @@ class Router
 				if (isset($_SESSION["adminName"]))
 				{
 					header("Location: index.php?admin");
+					exit;
 				}
 				else
 				{
